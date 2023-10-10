@@ -12,12 +12,10 @@ export function MainNav({
   const pathname = usePathname()
   const params = useParams()
 
-  console.log(pathname)
-
   const routes = [
     {
       href: `/${params.storeId}`,
-      label: 'Home',
+      label: 'Overview',
       active: pathname === `/${params.storeId}`,
     },
     {
